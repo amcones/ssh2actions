@@ -30,6 +30,9 @@ jobs:
   # You may pin to the exact commit or the version.
   # uses: P3TERX/ssh2actions@71006b93bff498b020448ac10964f8a5d0f9f32c
         uses: P3TERX/ssh2actions@v1.0.0
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         with:
         # choose tmate or ngrok mode
           mode: tmate
